@@ -44,7 +44,7 @@ function SecondaryNav() {
 
   return (
 
-    <div className="secondary-nav-wrapper">
+    <div className="secondary-nav-wrapper ">
       <div className="row p-1">
         <div className="container p-0 px-4">
           <div className="col-md-2 col-sm-none"></div>

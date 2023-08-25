@@ -39,7 +39,7 @@ function NavBar() {
 
 
         <div className="row">
-            <div className="nav-bar-wrapper sticky-top bg-body-tertiary p-1 px-3">
+            <div className="nav-bar-wrapper  p-1 px-3">
                 <div className="col-md-4 col-sm-3 col-lg-4 left-nav">
                     <ul className=" mb-md-0 m-0">
                         <li className='list-style-none mx-2 person account-mob '>

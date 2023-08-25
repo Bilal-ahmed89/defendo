@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import './LimitedDropsStyles.css'
-import SortingNavbar from '../../sortingnavbar/SortingNavbar'
-import ProductCard from '../../productCard/ProductCard'
-import {useGetLimitedDropsDetailsQuery} from '../../../features/limitedDrops'
+import SortingNavbar from '../sortingnavbar/SortingNavbar'
+import ProductCard from '../productCard/ProductCard'
+import {useGetLimitedDropsDetailsQuery} from '../../features/limitedDrops'
 import BarLoader from "react-spinners/BarLoader";
-import LimitedDropGridSortingBar from '../../limitedDropGridSortingBar/LimitedDropGridSortingBar'
+import LimitedDropGridSortingBar from '../limitedDropGridSortingBar/LimitedDropGridSortingBar';
 
-function LimitedDrops() {
+function LimitedDropGrid() {
 
   const [limitedDropsImages, setLimitedDropsImages] = useState([]);
   const { data: limitedDropsImagesData } = useGetLimitedDropsDetailsQuery()
@@ -30,7 +29,7 @@ function LimitedDrops() {
       <div className="row py-4 px-5">
 
         {limitedDropsImages.map((limitedDropsImage, idx) => (
-          <div key={idx} className="col-md-3 col-lg-3 col-sm-6">
+          <div key={idx} className="col-md-6 col-lg-6 col-sm-6">
             {
               loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} />
                 :
@@ -45,4 +44,4 @@ function LimitedDrops() {
   )
 }
 
-export default LimitedDrops
+export default LimitedDropGrid

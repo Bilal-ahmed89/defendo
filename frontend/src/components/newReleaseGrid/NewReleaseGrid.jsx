@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import './NewReleasesStyles.css'
-import ProductCard from '../../productCard/ProductCard';
-import SortingNavbar from '../../sortingnavbar/SortingNavbar';
-import {useGetNewReleasesDetailsQuery} from '../../../features/newReleases'
+import ProductCard from '../productCard/ProductCard';
+import {useGetNewReleasesDetailsQuery} from '../../features/newReleases'
 import BarLoader from "react-spinners/BarLoader";
-import NewReleaseSortingBar from '../../newReleaseSortingBar/NewReleaseSortingBar';
+import NewReleaseSortingBar from '../newReleaseSortingBar/NewReleaseSortingBar';
 
-function NewReleases() {
+function NewReleaseGrid() {
 
 
     const [newReleasesImages, setNewReleasesImages] = useState([]);
@@ -32,7 +30,7 @@ function NewReleases() {
         <div className="row py-4 px-5">
   
           {newReleasesImages.map((newReleasesImage, idx) => (
-            <div key={idx} className="col-md-3 col-lg-3 col-sm-6">
+            <div key={idx} className="col-md-6 col-lg-6 col-sm-6">
               {
                 loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} />
                   :
@@ -47,4 +45,4 @@ function NewReleases() {
     )
 }
 
-export default NewReleases
+export default NewReleaseGrid

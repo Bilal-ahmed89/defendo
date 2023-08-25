@@ -44,6 +44,12 @@ import Pendants from './components/pages/pendants/Pendants';
 import PendantGrid from './components/pages/pendants/PendantGrid';
 
 
+import StickyNav from './components/StickyNav';
+import NewReleaseGrid from './components/newReleaseGrid/NewReleaseGrid';
+import LimitedDropGrid from './components/limitedDropsGrid/LimitedDropsGrid';
+import LimitedDropGridSortingBar from './components/limitedDropGridSortingBar/LimitedDropGridSortingBar';
+
+
 
 
 
@@ -51,8 +57,7 @@ function App() {
   return (
     <Router>
       <AnnouncementBar />
-      <NavBar />
-      <SecondaryNav />
+      <StickyNav/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<ContactUs />} />
@@ -62,6 +67,10 @@ function App() {
         <Route path='/ring-grid' element={<RingGrid />} />
         <Route path='/pendant-grid' element={<PendantGrid />} />
         <Route path='/chain-grid' element={<ChainGrid />} />
+        <Route path='/limited-drop-grid' element={<LimitedDropGrid />} />
+        <Route path='/new-release-grid' element={<NewReleaseGrid />} />
+        <Route path='/limited-drop-grid-sorting-bar' element={<LimitedDropGridSortingBar />} />
+
         <Route path='/ring-sorting' element={<RingSortingBar />} />
         <Route path='/bracelet-sorting' element={<BraceletSortingBar />} />
         
