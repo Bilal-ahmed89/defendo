@@ -6,7 +6,7 @@
   "main": "index.js",
   "proxy": "http://localhost:7000",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node index.js"
