@@ -227,6 +227,16 @@
     display: none;
 }
 /* ****************************media-queries************************************/ 
+@media (min-width: 100px) and (max-width: 574.98px) {
+    .nav-bar-wrapper .main-name{
+        margin: 0 !important;
+    }
+    .nav-bar-wrapper .right-nav-ul{
+        margin: 0 !important;
+        padding: 0 !important ;
+    }
+
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {

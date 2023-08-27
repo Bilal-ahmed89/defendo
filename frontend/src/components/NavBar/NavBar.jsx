@@ -37,7 +37,6 @@ function NavBar() {
     return (
 
 
-
         <div className="row">
             <div className="nav-bar-wrapper  p-1 px-3">
                 <div className="col-md-4 col-sm-3 col-lg-4 left-nav">

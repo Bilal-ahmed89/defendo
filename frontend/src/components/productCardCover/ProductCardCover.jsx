@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 
 function ProductCardCover({data: categoryImagesData}) {
     return (
+        
         <div className="product-card-cover-wrapper">
             <Link to={`/${categoryImagesData?.name}`}>
             <div className="card mb-3 border-0">

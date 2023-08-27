@@ -21,6 +21,16 @@
 }
 
 /*****************media quiery*************************/
+@media (min-width: 100px) and (max-width: 574.98px) {
+    .our-insta-reviews-wrapper .row-video video {
+        width: 540px;
+        height: 530px;
+        margin-left: 60px;
+    }
+    .our-insta-reviews-wrapper .row-imgs{
+        margin-left: 40px ;
+    }
+}
 @media (max-width: 575.98px) {
     .our-insta-reviews-wrapper .row-imgs a img.review{
         margin: 18px !important;

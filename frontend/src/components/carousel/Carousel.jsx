@@ -74,10 +74,10 @@ export default function Carousel() {
                             <img src={baseUrl + heroImages[0]?.url} className="wide d-none d-sm-block w-100 " alt="" />
                             <div className="overlay"></div>
                             <div className="carousel-caption d-md-block">
-                                <Link to="/new-releases" className="btn btn-light text-uppercase text-dark m-3">
+                                <Link to="/new-releases" className="btn btn-light text-uppercase text-dark m-2">
                                     Shop new releases
                                 </Link>
-                                <Link to="" className="btn btn-light text-uppercase text-dark m-3">
+                                <Link to="" className="btn btn-light text-uppercase text-dark m-2">
                                     limited drops
                                 </Link>
                             </div>

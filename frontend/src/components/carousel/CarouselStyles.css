@@ -37,6 +37,14 @@
 
 
 /* ****************************media-queries************************************/ 
+@media (min-width: 100px) and (max-width: 574.98px) {
+  .carousel-wrapper .carousel-item .carousel-caption .btn{
+    padding: 12px !important;
+    font-size: 10px !important;
+  }
+
+}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {

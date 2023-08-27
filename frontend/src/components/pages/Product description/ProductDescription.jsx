@@ -163,9 +163,9 @@ function ProductDescription() {
                             <p className="p-2 buy-now text-center text-uppercase p-2 my-1      ">SOLD OUT!</p>
                         ) : (
                             <>
-                                <Link className='text-decor' to="" onClick={handleAddToCart}><h5 className='p-2 add-cart text-center text-uppercase p-2 my-2 btn'>add to cart</h5></Link>
-                                <Link className='text-decor' to="/checkout"> <h5 className='p-2 buy-now text-center text-uppercase p-2 my-1 btn'>buy it now</h5></Link>
-
+                                <Link className='text-decor ' to="" onClick={handleAddToCart}><h5 className='p-2 add-cart text-center  text-uppercase p-2 my-2 btn'>add to cart</h5></Link>
+                                <Link className='text-decor ' to="/checkout"> <h5 className='p-2 buy-now text-center text-uppercase  p-2 my-1 btn'>buy it now</h5></Link>
+p
                             </>
                         )}
                     <div className="description-wrapper">
@@ -176,7 +176,7 @@ function ProductDescription() {
                     </div>
                 </div>
             </div>
-            <div className="row px-5">
+            <div className="row pad-0 px-5">
                 <div className="col-md-8 accordian-col px-4">
                     <div className="accordian-wrapper w-100">
                         <div class="accordion accordion-flush reveal" id="accordionFlushExample">

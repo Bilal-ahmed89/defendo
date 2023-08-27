@@ -28,7 +28,7 @@ function OurInstaReviews() {
         <div className="our-insta-reviews-wrapper py-2 reveal">
             <div className="row">
                 <h5 className='text-center p-4'>Don't miss out, follow us on instagram <span><img className='skull' src={skull} alt="" /></span></h5>
-                <div className="row p-3">
+                <div className="row vid-row p-3">
                     <div className="col-md-6 video">
                         <div className="row row-video py-3">
                             <div className="col-md-6 p-0">

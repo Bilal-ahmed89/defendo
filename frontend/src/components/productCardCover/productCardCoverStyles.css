@@ -83,3 +83,19 @@
   .image-container:hover img {
     transform: scale(1.2); /* Set the scale factor */
   }
+
+
+
+  @media (min-width: 100px) and (max-width: 574.98px) {
+    .product-card-cover-wrapper .card .cover-pic img {
+    position: relative !important;
+    overflow: hidden !important;
+    display: block !important;
+    height: 480px !important;
+    overflow:clip !important;
+    transition: transform 4s ease-out !important;
+    background-size: cover !important;
+}
+
+
+}
