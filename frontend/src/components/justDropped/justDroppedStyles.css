@@ -46,7 +46,7 @@
     position: absolute;
     content: "";
     width: 40px;
-    padding: 11px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     height: 40px;
@@ -59,14 +59,14 @@
 .just-dropped-wrapper .view-product-wrapper .model-img .dot1:hover{
     width: 45px;
     height: 45px;
-    padding: 14px;
+    padding: 9px;
     transition: .5s;
 }
 .just-dropped-wrapper .view-product-wrapper .model-img .dot2 {
     position: absolute;
     content: "";
     width: 40px;
-    padding: 11px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     height: 40px;
@@ -79,14 +79,14 @@
 .just-dropped-wrapper .view-product-wrapper .model-img .dot2:hover{
     width: 45px;
     height: 45px;
-    padding: 14px;
+    padding: 9px;
     transition: .5s;
 }
 .just-dropped-wrapper .view-product-wrapper .model-img .dot3 {
     position: absolute;
     content: "";
     width: 40px;
-    padding: 11px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     height: 40px;
@@ -99,7 +99,7 @@
 .just-dropped-wrapper .view-product-wrapper .model-img .dot3:hover{
     width: 45px;
     height: 45px;
-    padding: 14px;
+    padding: 9px;
     transition: .5s;
 }
 
@@ -107,7 +107,7 @@
     position: absolute;
     content: "";
     width: 40px;
-    padding: 11px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     height: 40px;
@@ -120,15 +120,15 @@
 .just-dropped-wrapper .view-product-wrapper .model-img .dot4:hover{
     width: 45px;
     height: 45px;
-    padding: 14px;
+    padding: 9px;
     transition: .5s;
 }
 
-.just-dropped-wrapper .view-product-wrapper .model-img .dot6 {
+.just-dropped-wrapper .view-product-wrapper .model-img .dot5 {
     position: absolute;
     content: "";
     width: 40px;
-    padding: 11px;
+    padding: 7px;
     cursor: pointer;
     color: #fff;
     height: 40px;
@@ -138,10 +138,10 @@
     background: rgba(255, 255, 255, .4);
     animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
 }
-.just-dropped-wrapper .view-product-wrapper .model-img .dot6:hover{
+.just-dropped-wrapper .view-product-wrapper .model-img .dot5:hover{
     width: 45px;
     height: 45px;
-    padding: 14px;
+    padding: 9px;
     transition: .5s;
 }
 .just-dropped-wrapper .view-product-wrapper .model-img img {
@@ -183,31 +183,73 @@
 }
 
 /* ****************************media-queries************************************/ 
-@media (min-width: 100px) and (max-width: 574.98px) {
-    .just-dropped-wrapper .view-product-wrapper .model-img .dot1 {
+@media(max-width: 475.98px) {
+    .just-dropped-wrapper .view-product-wrapper .model-img a .dot1 {
         position: absolute !important;
         content: "" !important;
-        width: 40px !important;
-        padding: 11px ! important;
+        width: 30px !important;
+        padding: 6px ! important;
         cursor: pointer !important;
-        color: #750f0f !important;
-        height: 40px !important;
-        left: 10px !important;
-        top: 40px !important;
+        height: 30px !important;
+        left: 100px !important;
+        top: 100px !important;
+        color: #fff;
         border-radius: 100% !important;
-        background: rgba(230, 0, 0, 0.4) !important;
+        background: rgba(255, 255, 255, .4);
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
     }
-    .just-dropped-wrapper .view-product-wrapper .model-img .dot3 {
+    .just-dropped-wrapper .view-product-wrapper .model-img a .dot2 {
         position: absolute !important;
         content: "" !important;
-        width: 40px !important;
-        padding: 11px !important;
+        width: 30px !important;
+        padding: 6px !important;
         cursor: pointer !important;
-        color: #31097c !important;
-        height: 40px !important;
-        right: 50px !important;
-        top: 20px !important;
+        color: #ffffff !important;
+        height: 30px !important;
+        left: 20px !important;
+        top: 160px !important;
+        border-radius: 100% !important;
+        background: rgba(255, 255, 255, .4) !important;
+        animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
+    }
+    .just-dropped-wrapper .view-product-wrapper .model-img a .dot3 {
+        position: absolute !important;
+        content: "" !important;
+        width: 30px !important;
+        padding: 6px !important;
+        cursor: pointer !important;
+        color: #ffffff !important;
+        height: 30px !important;
+        left: 130px !important;
+        top: 230px !important;
+        border-radius: 100% !important;
+        background: rgba(255, 255, 255, .4) !important;
+        animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
+    }
+    .just-dropped-wrapper .view-product-wrapper .model-img a .dot4 {
+        position: absolute !important;
+        content: "" !important;
+        width: 30px !important;
+        padding: 6px !important;
+        cursor: pointer !important;
+        color: #ffffff !important;
+        height: 30px !important;
+        left: 130px !important;
+        top: 230px !important;
+        border-radius: 100% !important;
+        background: rgba(255, 255, 255, .4) !important;
+        animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
+    }
+    .just-dropped-wrapper .view-product-wrapper .model-img a .dot5 {
+        position: absolute !important;
+        content: "" !important;
+        width: 30px !important;
+        padding: 6px !important;
+        cursor: pointer !important;
+        color: #ffffff !important;
+        height: 30px !important;
+        left: 130px !important;
+        top: 60px !important;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4) !important;
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;

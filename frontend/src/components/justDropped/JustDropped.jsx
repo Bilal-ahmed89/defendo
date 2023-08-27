@@ -49,12 +49,13 @@ function JustDropped() {
                 <Link to={`/bracelet-description/${justDroppedImages[0]?.productId2}`}><div className="dot3"><i class="bi bi-circle-fill"></i></div></Link>
               </div>
 
+
             </div>
             <div className="col-md-6 m-1">
               <div className="model-img">
                 <img src={baseUrl + justDroppedImages[1]?.url} alt="" />
                 <Link to={`/product-description/${justDroppedImages[1]?.productId}`}><div className="dot4"><i class="bi bi-circle-fill"></i></div></Link>
-                <Link to={`/chain-description/${justDroppedImages[1]?.productId2}`}><div className="dot6"><i class="bi bi-circle-fill"></i></div></Link>
+                <Link to={`/chain-description/${justDroppedImages[1]?.productId2}`}><div className="dot5"><i class="bi bi-circle-fill"></i></div></Link>
               </div>
             </div>
           </div>
