@@ -38,7 +38,7 @@ function JustDropped() {
       <div className="title">
         <h3 className='text-uppercase text-center fs-6'><i className="bi bi-arrow-down-short"></i> Don't miss our New Arrivals <i className="bi bi-arrow-down-short"></i></h3>
       </div>
-      <div className="container mt-5 ">
+      <div className="container non-container mt-5 ">
         <div className="view-product-wrapper">
           <div className="row">
             <div className="col-md-6 m-1">

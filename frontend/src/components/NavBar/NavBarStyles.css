@@ -65,7 +65,22 @@
     justify-content: flex-start;
     align-items: center;
 }
-
+.left-nav .hamburger .btn:focus,.btn:active,.btn:visited{
+    outline: none !important;
+    text-decoration: none !important;
+}
+.right-nav .btn:focus,.btn:active,.btn:visited{
+    outline: none !important;
+    text-decoration: none !important;
+}
+.nav-bar-wrapper .accordion-item{
+    border: 0 !important;
+}
+.nav-bar-wrapper .accordian-item button:focus,button:active,button:visited{
+    outline: none !important;
+    text-decoration: none !important;
+    border: none !important;
+}
 .right-nav .offcanvas {
     width: 420px !important;
 }

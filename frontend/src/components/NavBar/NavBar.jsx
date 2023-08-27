@@ -80,7 +80,7 @@ function NavBar() {
                                 <i className="bi bi-person fs-3 fw-bold text-dark"></i>
                             </Link>
                         </li>
-                        <button className="btn p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <button className="btn cart-button p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                             <i className={`bi bi-bag fs-5 fw-bold text-dark ${cartItems.length > 0 ? 'cart-has-items' : ''}`}></i>
                         </button>
 
@@ -125,57 +125,56 @@ function NavBar() {
                     <Link className='py-5 ' to="/new-releases">NEW RELEASES</Link>
                     <hr />
 
-                    
+
                     <div className="accordion-item">
-    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <div className="shop-cat">
-            <div className="category">SHOP BY CATEGORY</div>
-            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-        </div>
-    </button>
-    <div className="accordion" id="accordionExampleOne">
-        <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
-            <div className="about mb-0 px-3">
-                <div className="accordion-item my-2">
-                    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        <div className="shop-cat">
-                            <div className="category">Accessories</div>
-                            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-                        </div>
-                    </button>
-                    <div className="accordion" id="accordionExampleTwo">
-                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
-                            <div className="about mb-0 px-3">
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> chains</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
+                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div className="shop-cat">
+                                <div className="category">SHOP BY CATEGORY</div>
+                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                            </div>
+                        </button>
+                        <div className="accordion" id="accordionExampleOne">
+                            <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
+                                <div className="about mb-0 px-3">
+                                    <div className="accordion-item my-2">
+                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <div className="shop-cat">
+                                                <div className="category">Accessories</div>
+                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                                            </div>
+                                        </button>
+                                        <div className="accordion" id="accordionExampleTwo">
+                                            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                                                <div className="about mb-0 px-3">
+                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Rings"> rings</Link>
+                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Bracelets"> bracelets</Link>
+                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Pendants">pendants</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="accordion-item my-2">
+                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <div className="shop-cat">
+                                                <div className="category">clothing</div>
+                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                                            </div>
+                                        </button>
+                                        <div className="accordion" id="accordionExampleThree">
+                                            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
+                                                <div className="about mb-0 px-3">
+                                                    <li className='list-none m-2 d-flex justify-content-between'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                    <li className='list-none m-2  d-flex justify-content-between'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                    <li className='list-none m-2  d-flex justify-content-between'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                    <li className='list-none m-2  d-flex justify-content-between'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="accordion-item my-2">
-                    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <div className="shop-cat">
-                            <div className="category">New Releases</div>
-                            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-                        </div>
-                    </button>
-                    <div className="accordion" id="accordionExampleThree">
-                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
-                            <div className="about mb-0 px-3">
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> chains</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
-                                <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

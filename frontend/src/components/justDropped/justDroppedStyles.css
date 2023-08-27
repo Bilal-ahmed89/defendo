@@ -184,15 +184,21 @@
 
 /* ****************************media-queries************************************/ 
 @media(max-width: 475.98px) {
+    .just-dropped-wrapper .container{
+        padding: 0 !important;
+    }
+    .just-dropped-wrapper .col-md-6{
+        padding: 0 !important;
+    }
     .just-dropped-wrapper .view-product-wrapper .model-img a .dot1 {
         position: absolute !important;
         content: "" !important;
         width: 30px !important;
-        padding: 6px ! important;
+        padding: 7px ! important;
         cursor: pointer !important;
         height: 30px !important;
         left: 100px !important;
-        top: 100px !important;
+        top: 120px !important;
         color: #fff;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4);
@@ -202,12 +208,12 @@
         position: absolute !important;
         content: "" !important;
         width: 30px !important;
-        padding: 6px !important;
+        padding: 7px !important;
         cursor: pointer !important;
         color: #ffffff !important;
         height: 30px !important;
         left: 20px !important;
-        top: 160px !important;
+        top: 150px !important;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4) !important;
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
@@ -216,12 +222,12 @@
         position: absolute !important;
         content: "" !important;
         width: 30px !important;
-        padding: 6px !important;
+        padding: 7px !important;
         cursor: pointer !important;
         color: #ffffff !important;
         height: 30px !important;
         left: 130px !important;
-        top: 230px !important;
+        top: 240px !important;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4) !important;
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
@@ -230,12 +236,12 @@
         position: absolute !important;
         content: "" !important;
         width: 30px !important;
-        padding: 6px !important;
+        padding: 7px !important;
         cursor: pointer !important;
         color: #ffffff !important;
         height: 30px !important;
         left: 130px !important;
-        top: 230px !important;
+        top: 240px !important;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4) !important;
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
@@ -244,12 +250,12 @@
         position: absolute !important;
         content: "" !important;
         width: 30px !important;
-        padding: 6px !important;
+        padding: 7px !important;
         cursor: pointer !important;
         color: #ffffff !important;
         height: 30px !important;
         left: 130px !important;
-        top: 60px !important;
+        top: 70px !important;
         border-radius: 100% !important;
         background: rgba(255, 255, 255, .4) !important;
         animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite !important;
