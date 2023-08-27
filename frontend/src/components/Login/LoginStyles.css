@@ -48,7 +48,7 @@
 
 
 /* ****************************media-queries************************************/ 
-@media (min-width: 100px) and (max-width: 573.98px) {
+/* @media (min-width: 100px) and (max-width: 398.98px) {
     .login-wrapper .row .container .form .display{
         display: flex !important;
         align-items: center !important;
@@ -63,9 +63,9 @@
         width: 100% !important;
         margin:4px 0 !important;
     }
-}
+} */
 
-  /* @media(max-width: 574.98px) { 
+  @media(max-width: 374.98px) { 
     .login-wrapper .row .container .form .display{
         display: flex;
         align-items: center;
@@ -74,8 +74,10 @@
     .login-wrapper .form input{
         width: 100% !important;
         margin:14px 0 !important;
+        margin-left: 10px !important;
     }
     .login-wrapper .login-btn{
         margin:4px 0 !important;
+        margin: 0 !important;
     }
-  }  */
+  } 

@@ -64,13 +64,13 @@ function Login() {
                                 <h1 className="h3 mb-3 fw-normal text-center text-uppercase heading">Login</h1>
                                 <p className='text-center'>Please enter your e-mail and password</p>
                                 <div className="display">
-                                    <div className="inside-form">
+                                    <div className="inside-form ps-4">
                                         {error && <p className="text-center error-message">{error}</p>}
                                         <Field className='email p-1 my-2' type="text" placeholder='Email' name="email" />
                                         {errors.email && touched.email && <ErrorMessage className="error-message" name="email" component="div" />}
                                         <Field className='password p-1 my-2' type="password" placeholder='Password' name="password" />
                                         {errors.password && touched.password && <ErrorMessage className="error-message" name="password" component="div" />}
-                                        <button className='login-btn my-3 p-2 py-2' type="submit">Login</button>
+                                        <button className='login-btn my-3 p-2 py-2 mx-0' type="submit">Login</button>
                                         <p className='text-center create'>Don't have an account?<Link to="/account/signup" className='mx-1'>Create one</Link> </p>
                                     </div>
                                 </div>
