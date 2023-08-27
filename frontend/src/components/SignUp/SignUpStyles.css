@@ -76,3 +76,8 @@
     
   } 
  
+  @media(max-width: 375.98px) { 
+    .signup-wrapper .signup-btn{
+        width: 100% !important;
+    }
+  }

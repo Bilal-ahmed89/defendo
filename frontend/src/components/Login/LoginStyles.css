@@ -64,7 +64,7 @@
         margin:4px 0 !important;
     }
 } */
-
+/* 
   @media(max-width: 374.98px) { 
     .login-wrapper .row .container .form .display{
         display: flex;
@@ -79,5 +79,12 @@
     .login-wrapper .login-btn{
         margin:4px 0 !important;
         margin: 0 !important;
+        width: 100% !important;
     }
-  } 
+  }  */
+
+  @media(max-width: 375.98px) { 
+    .login-wrapper .login-btn{
+        width: 100% !important;
+    }
+  }

@@ -1,5 +1,5 @@
 .row{
-    width: 99%;
+    width: 100%;
 }
 .nav-bar-wrapper {
     display: flex;
@@ -237,7 +237,20 @@
     }
 
 }
-
+@media(max-width: 375.98px) { 
+    .nav-bar-wrapper{
+        padding:0 !important;
+    }
+    .nav-bar-wrapper .left-nav {
+        width: 25% !important;
+    }
+    .nav-bar-wrapper .left-nav ul{
+        padding: 0 !important;
+    }
+    .nav-bar-wrapper .right-nav-ul li{
+        width: 100% !important;
+    }
+  }
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.98px) {
    .nav-bar-wrapper .row{

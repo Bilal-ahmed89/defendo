@@ -39,7 +39,7 @@ function NavBar() {
 
         <div className="row">
             <div className="nav-bar-wrapper  p-1 px-3">
-                <div className="col-md-4 col-sm-3 col-lg-4 left-nav">
+                <div className="col-md-4 col-sm-3 col-lg-4 left-nav p-1">
                     <ul className=" mb-md-0 m-0">
                         <li className='list-style-none mx-2 person account-mob '>
                             {
@@ -75,12 +75,12 @@ function NavBar() {
 
                 <div className="right-nav col-md-4 col-sm-3 col-lg-4">
                     <ul className=" right-nav-ul me-3 mb-2 mb-md-0">
-                        <li className='list-style-none mx-2 person account '>
+                        <li className='list-style-none  person account'>
                             <Link className='text-decor' aria-current="page" to="/account/login">
                                 <i className="bi bi-person fs-3 fw-bold text-dark"></i>
                             </Link>
                         </li>
-                        <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <button className="btn p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                             <i className={`bi bi-bag fs-5 fw-bold text-dark ${cartItems.length > 0 ? 'cart-has-items' : ''}`}></i>
                         </button>
 
