@@ -72,6 +72,7 @@ function NavBar() {
                     </ul>
                 </div>
 
+
                 <div className="right-nav col-md-4 col-sm-3 col-lg-4">
                     <ul className=" right-nav-ul me-3 mb-2 mb-md-0">
                         <li className='list-style-none mx-2 person account '>
@@ -123,37 +124,62 @@ function NavBar() {
                     <hr />
                     <Link className='py-5 ' to="/new-releases">NEW RELEASES</Link>
                     <hr />
+
+                    
                     <div className="accordion-item">
-                        <button className="accordion-button  d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div className="shop-cat"><div className="category ">SHOP BY CATEGORY</div><div className="icon"><i className="bi bi-plus-lg fs-6"></i></div></div>
-                        </button>
-                        <div className="accordion " id="accordionExample">
-                            <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div className="about mb-0 px-3">
-                                    <Link className='d-block my-1 py-2 text-uppercase' to="">
-                                        <div className="accordion-item">
-                                            <button className="accordion-button  d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                <div className="shop-cat"><div className="category ">SHOP BY CATEGORY</div><div className="icon"><i className="bi bi-plus-lg fs-6"></i></div></div>
-                                            </button>
-                                            <div className="accordion " id="accordionExample">
-                                                <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                                    <div className="about mb-0 px-3">
-                                                        <Link className='d-block my-1 py-2 text-uppercase' to=""> chains</Link>
-                                                        <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
-                                                        <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
-                                                        <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                    <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
-                                    <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
-                                    <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
-                                </div>
+    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div className="shop-cat">
+            <div className="category">SHOP BY CATEGORY</div>
+            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+        </div>
+    </button>
+    <div className="accordion" id="accordionExampleOne">
+        <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
+            <div className="about mb-0 px-3">
+                <div className="accordion-item my-2">
+                    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <div className="shop-cat">
+                            <div className="category">Accessories</div>
+                            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                        </div>
+                    </button>
+                    <div className="accordion" id="accordionExampleTwo">
+                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                            <div className="about mb-0 px-3">
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> chains</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="accordion-item my-2">
+                    <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <div className="shop-cat">
+                            <div className="category">New Releases</div>
+                            <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                        </div>
+                    </button>
+                    <div className="accordion" id="accordionExampleThree">
+                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
+                            <div className="about mb-0 px-3">
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> chains</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to="">pendants</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> rings</Link>
+                                <Link className='d-block my-1 py-2 text-uppercase' to=""> bracelets</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
                     <hr />
                     <Link className='py-5 ' to="/coming-soon">COMING SOON</Link>
                     <hr />
