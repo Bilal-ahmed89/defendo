@@ -62,3 +62,9 @@
 .return-refund-wrapper .situations ul li{
     font-size:small;
 }
+@media (min-width: 100px) and (max-width: 574.98px) {
+    .return-refund-wrapper{
+        padding: 0 !important;
+    }
+
+}

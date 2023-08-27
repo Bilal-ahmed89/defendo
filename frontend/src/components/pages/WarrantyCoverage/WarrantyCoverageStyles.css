@@ -9,3 +9,10 @@
     line-height: 30px;
     text-align: center;
 }
+@media (min-width: 100px) and (max-width: 574.98px) {
+    .warranty-coverage-page-wrapper{
+        padding: 0 !important;
+        margin: 10px 0 !important;
+    }
+
+}

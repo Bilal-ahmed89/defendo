@@ -18,13 +18,13 @@ function FAQs() {
 
     return (
 
-        <div className="faqs-wrapper p-5">
-            <div className="row mb-4">
+        <div className="faqs-wrapper py-4 ps-4">
+            <div className="row mb-3">
                 <h5 className='text-center fw-bold'>Frequently Asked Questions</h5>
             </div>
-            <div className="row ">
+            <div className="row acrd-row">
                 <div className="accordion accordion-flush w-75" id="accordionFlushExample">
-                    <p className='my-4 para'>Check most frequently asked questions here, if you still need help then please contact us at contact@shopdefendo.com</p>
+                    <p className='my-4 para text-center'>Check most frequently asked questions here, if you still need help then please contact us at contact@shopdefendo.com</p>
                     <h5 className='fw-bold text-uppercase'>generl + company</h5>
                     <div className="accordion-item my-2 ">
                         <h2 className="accordion-header ">
@@ -62,7 +62,7 @@ function FAQs() {
 
 
 
-            <div className="row my-4">
+            <div className="row my-4 acrd-row">
                 <div className="accordion accordion-flush w-75" id="accordionFlushExample">
                     <h5 className='fw-bold text-uppercase'>MATERIALS + PRODUCTS</h5>
                     <div className="accordion-item my-2 ">
@@ -90,7 +90,7 @@ function FAQs() {
                 </div>
             </div>
 
-            <div className="row my-4">
+            <div className="row my-4 acrd-row">
                 <div className="accordion accordion-flush w-75" id="accordionFlushExample">
                     <h5 className='fw-bold text-uppercase'>RETURNS + EXCHANGES</h5>
                     <div className="accordion-item my-2 ">
