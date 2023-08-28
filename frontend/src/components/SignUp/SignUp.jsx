@@ -63,7 +63,7 @@ function SignUp() {
                 <h1 className="h3 mb-3 fw-normal text-center text-uppercase heading">register</h1>
                 <p className='text-center'>Please fill in the information below:</p>
                 <div className="display">
-                  <div className="inside-form ps-4">
+                  <div className="inside-form ps-0">
                     {error && <p className="text-center error-message">{error}</p>}
                     <Field className='firstname p-1 my-2' type="text" placeholder='First name' name="firstName" />
                     {errors.firstName && touched.firstName && <ErrorMessage className="error-message" name="firstName" component="div" />}
