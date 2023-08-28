@@ -55,7 +55,7 @@ function Login() {
     };
 
     return (
-        <div className="login-wrapper p-5">
+        <div className="login-wrapper py-5 px-0">
             <div className="row">
                 <div className="container">
                     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
