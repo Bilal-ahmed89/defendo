@@ -13,7 +13,7 @@
     display: flex;
     border-radius: 2px;
     align-items: center;
-    margin: 0 360px;
+    margin: 0 330px;
 }
 
 .signup-wrapper input::placeholder {
@@ -39,7 +39,7 @@
 .signup-wrapper .signup-btn {
     font-size: 12px;
     width: 348px;
-    margin: 0 360px;
+    margin: 0 330px;
 }
 .signup-wrapper .row form .error-message{
     color: red;

@@ -210,7 +210,7 @@ function Checkout() {
                                                 }
                                             </ul>
                                     </div>
-                                    <div className="col-12 form-check mb-3 py-3 ms-4">
+                                    <div className="col-12 form-check mb-3 py-3 ms-4 terms" id='terms'>
                                         <Field type="checkbox" id="termsAndConditions" name="termsAndConditions" className="form-check-input" required />
                                         <label className="form-check-label" htmlFor="termsAndConditions">I agree to the terms and conditions</label>
                                         {errors.orderNotes && <ErrorMessage name="termsAndConditions" component="div" className="invalid-feedback" />}

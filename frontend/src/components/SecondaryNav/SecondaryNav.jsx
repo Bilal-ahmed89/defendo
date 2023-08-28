@@ -54,7 +54,7 @@ function SecondaryNav() {
               <li className='list-none '>
                 <div className="dropdown2">
                   <div className='dropdown2-btn btn text-dark text-uppercase'>
-                    category  <i className="bi bi-chevron-down down-arrow mx-1"></i>
+                   <span> category</span>  <i className="bi bi-chevron-down down-arrow mx-1"></i>
                   </div>
                   <div className="dropmenu2">
                     <div className="row p-3">
@@ -96,7 +96,7 @@ function SecondaryNav() {
               <li className='list-none '>
                 <div className="dropdown1">
                   <div className='dropdown1-btn btn text-dark text-uppercase'>
-                    All Collections <i className="bi bi-chevron-down down-arrow mx-1"></i>
+                   <span> All Collections</span> <i className="bi bi-chevron-down down-arrow mx-1"></i>
                   </div>
                   <div className="dropmenu1">
                     <ul className='p-1'>
@@ -108,14 +108,14 @@ function SecondaryNav() {
                   </div>
                 </div>
               </li>
-              <Link to="/coming-soon" className='text-decor noeffect'><li className='list-none text-uppercase me-4 d-none d-md-block p-1' >The Resurrection</li></Link>
+              <Link to="/coming-soon" className='text-decor noeffect'><li className='list-none text-uppercase me-4 d-none d-md-block p-1' ><span>The Resurrection</span></li></Link>
 
 
 
               <li className='list-none '>
                 <div className="dropdown3">
                   <div className='dropdown3-btn btn text-dark text-uppercase'>
-                    about us <i className="bi bi-chevron-down down-arrow mx-1"></i>
+                   <span> about us</span> <i className="bi bi-chevron-down down-arrow mx-1"></i>
                   </div>
                   <div className="dropmenu3">
                     <ul className='p-1'>

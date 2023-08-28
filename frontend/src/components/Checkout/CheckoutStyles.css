@@ -20,6 +20,14 @@
 }
 
 /********************************************/
+@media (max-width: 414.98px) {
+    #cashondelivery{
+        margin-left: 20px !important;
+    }
+    #terms{
+        padding: 0 22px !important;
+    }
+}
 @media (max-width: 575.98px) {
     .checkout-btn{
         background-color: rgb(71, 71, 71);

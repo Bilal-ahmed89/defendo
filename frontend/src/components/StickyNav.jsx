@@ -4,7 +4,7 @@ import SecondaryNav from './SecondaryNav/SecondaryNav'
 
 function StickyNav() {
   return (
-    <div className="stickey-nav-wrapper sticky-top bg-body-tertiary">
+    <div className="stickey-nav-wrapper sticky-top bg-body-tertiary ">
         <NavBar/>
         <SecondaryNav/>
     </div>
