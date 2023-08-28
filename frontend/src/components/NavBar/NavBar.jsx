@@ -183,11 +183,11 @@ function NavBar() {
                     <Link className='py-5 ' to="/coming-soon">COMING SOON</Link>
                     <hr />
                     <div className="about mt-4">
-                        <Link className='d-block my-3' to="/contact">Contact Us</Link>
-                        <Link className='d-block my-3' to="/faq">FAQs</Link>
-                        <Link className='d-block my-3' to="/warranty-coverage">Warranty Coverage</Link>
-                        <Link className='d-block my-3' to="/return-refund">Returns & Refunds</Link>
-                        <Link className='d-block my-3' to="/account/login">Account</Link>
+                        <Link className='d-block my-3 ms-0' to="/contact">Contact Us</Link>
+                        <Link className='d-block my-3 ms-0' to="/faq">FAQs</Link>
+                        <Link className='d-block my-3 ms-0' to="/warranty-coverage">Warranty Coverage</Link>
+                        <Link className='d-block my-3 ms-0' to="/return-refund">Returns & Refunds</Link>
+                        <Link className='d-block my-3 ms-0' to="/account/login">Account</Link>
                     </div>
                 </div>
                 <div className="offcanvas-footer">
