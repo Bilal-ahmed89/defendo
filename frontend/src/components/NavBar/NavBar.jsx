@@ -76,9 +76,16 @@ function NavBar() {
                 <div className="right-nav col-md-4 col-sm-3 col-lg-4">
                     <ul className=" right-nav-ul me-3 mb-2 mb-md-0">
                         <li className='list-style-none  person account'>
-                            <Link className='text-decor' aria-current="page" to="/account/login">
-                                <i className="bi bi-person fs-3 fw-bold text-dark"></i>
-                            </Link>
+                        {
+                                token ?
+                                    <Link className='text-decor' aria-current="page" to="/" onClick={() => { dispatch(logOut()) }}>
+                                        <i className="bi bi-power fs-3 fw-bold text-dark"></i>
+                                    </Link>
+                                    :
+                                    <Link className='text-decor' aria-current="page" to="/account/login">
+                                        <i className="bi bi-person fs-3 fw-bold text-dark"></i>
+                                    </Link>
+                            }
                         </li>
                         <button className="btn cart-button p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                             <i className={`bi bi-bag fs-5 fw-bold text-dark ${cartItems.length > 0 ? 'cart-has-items' : ''}`}></i>

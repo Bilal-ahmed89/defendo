@@ -165,7 +165,6 @@ function ProductDescription() {
                             <>
                                 <Link className='text-decor ' to="" onClick={handleAddToCart}><h5 className='p-2 add-cart text-center  text-uppercase p-2 my-2 btn'>add to cart</h5></Link>
                                 <Link className='text-decor ' to="/checkout"> <h5 className='p-2 buy-now text-center text-uppercase  p-2 my-1 btn'>buy it now</h5></Link>
-p
                             </>
                         )}
                     <div className="description-wrapper">
