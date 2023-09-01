@@ -33,6 +33,17 @@ function NavBar() {
         }
     }, [location]);
 
+    useEffect(() => {
+        const offCanvas = document.getElementById('staticBackdrop2');
+        if (offCanvas) {
+            const offCanvasCloseButton = offCanvas.querySelector('.btn-close');
+            if (offCanvasCloseButton) {
+
+                offCanvasCloseButton.click();
+            }
+        }
+    }, [location]);
+
 
     return (
 
@@ -59,6 +70,93 @@ function NavBar() {
                             <Link className="btn  d-md-block text-decor" data-bs-toggle="offcanvas" to="#offcanvasExample" role="button" aria-controls="offcanvasExample" >
                                 <i className="bi bi-list text-dark fs-4 fw-bold"></i>
                             </Link>
+                            <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+                            >
+                                <div className="offcanvas-header mb-4" id="staticBackdrop2">
+                                    <button type="button" className="btn-close text-reset"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div className="offcanvas-body m-0  py-5 px-4">
+                                    <Link className='py-5 ' to="/">Home</Link>
+                                    <hr />
+                                    <Link className='py-5 ' to="/new-releases">NEW RELEASES</Link>
+                                    <hr />
+
+
+                                    <div className="accordion-item">
+                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <div className="shop-cat">
+                                                <div className="category">SHOP BY CATEGORY</div>
+                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                                            </div>
+                                        </button>
+                                        <div className="accordion" id="accordionExampleOne">
+                                            <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
+                                                <div className="about mb-0 px-3">
+                                                    <div className="accordion-item my-2">
+                                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <div className="shop-cat">
+                                                                <div className="category">Accessories</div>
+                                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                                                            </div>
+                                                        </button>
+                                                        <div className="accordion" id="accordionExampleTwo">
+                                                            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                                                                <div className="about mb-0 px-3">
+                                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Rings"> rings</Link>
+                                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Bracelets"> bracelets</Link>
+                                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Pendants">pendants</Link>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="accordion-item my-2">
+                                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                            <div className="shop-cat">
+                                                                <div className="category">clothing</div>
+                                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
+                                                            </div>
+                                                        </button>
+                                                        <div className="accordion" id="accordionExampleThree">
+                                                            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
+                                                                <div className="about mb-0 px-3">
+                                                                    <li className='list-none m-2 d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <hr />
+                                    <Link className='py-5 ' to="/coming-soon">COMING SOON</Link>
+                                    <hr />
+                                    <div className="about mt-4">
+                                        <Link className='d-block my-3 ms-0' to="/contact">Contact Us</Link>
+                                        <Link className='d-block my-3 ms-0' to="/faq">FAQs</Link>
+                                        <Link className='d-block my-3 ms-0' to="/warranty-coverage">Warranty Coverage</Link>
+                                        <Link className='d-block my-3 ms-0' to="/return-refund">Returns & Refunds</Link>
+                                        <Link className='d-block my-3 ms-0' to="/account/login">Account</Link>
+                                    </div>
+                                </div>
+                                <div className="offcanvas-footer">
+                                    <hr className='m-1 w-100' />
+                                    <div className="social-media py-2">
+                                        <Link to=""><i className="bi bi-facebook fs-6"></i></Link>
+                                        <Link to="https://www.instagram.com/defendoofficial/reels/"><i className="bi bi-instagram fs-6"></i></Link>
+                                        <Link to=""><i className="bi bi-tiktok fs-6"></i></Link>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +174,7 @@ function NavBar() {
                 <div className="right-nav col-md-4 col-sm-3 col-lg-4">
                     <ul className=" right-nav-ul me-3 mb-2 mb-md-0">
                         <li className='list-style-none  person account'>
-                        {
+                            {
                                 token ?
                                     <Link className='text-decor' aria-current="page" to="/" onClick={() => { dispatch(logOut()) }}>
                                         <i className="bi bi-power fs-3 fw-bold text-dark"></i>
@@ -119,95 +217,6 @@ function NavBar() {
 
             </div>
 
-
-
-            <div className="offcanvas offcanvas-start" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
-            >
-                <div className="offcanvas-header mb-4">
-                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div className="offcanvas-body m-0  py-5 px-4">
-                    <Link className='py-5 ' to="/">Home</Link>
-                    <hr />
-                    <Link className='py-5 ' to="/new-releases">NEW RELEASES</Link>
-                    <hr />
-
-
-                    <div className="accordion-item">
-                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div className="shop-cat">
-                                <div className="category">SHOP BY CATEGORY</div>
-                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-                            </div>
-                        </button>
-                        <div className="accordion" id="accordionExampleOne">
-                            <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExampleOne">
-                                <div className="about mb-0 px-3">
-                                    <div className="accordion-item my-2">
-                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                            <div className="shop-cat">
-                                                <div className="category">Accessories</div>
-                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-                                            </div>
-                                        </button>
-                                        <div className="accordion" id="accordionExampleTwo">
-                                            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
-                                                <div className="about mb-0 px-3">
-                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Rings"> rings</Link>
-                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Bracelets"> bracelets</Link>
-                                                    <Link className='d-block my-1 py-2 text-uppercase' to="/Pendants">pendants</Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item my-2">
-                                        <button className="accordion-button d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                            <div className="shop-cat">
-                                                <div className="category">clothing</div>
-                                                <div className="icon"><i className="bi bi-plus-lg fs-6"></i></div>
-                                            </div>
-                                        </button>
-                                        <div className="accordion" id="accordionExampleThree">
-                                            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
-                                                <div className="about mb-0 px-3">
-                                                    <li className='list-none m-2 d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                                                    <li className='list-none m-2  d-flex justify-content-between p-2'><Link className='text-decor fs-10 text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '8px', textDecoration: 'underline' }} className='text-dark p-0 ms-1 rounded-1 '>Coming Soon</span></li>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <hr />
-                    <Link className='py-5 ' to="/coming-soon">COMING SOON</Link>
-                    <hr />
-                    <div className="about mt-4">
-                        <Link className='d-block my-3 ms-0' to="/contact">Contact Us</Link>
-                        <Link className='d-block my-3 ms-0' to="/faq">FAQs</Link>
-                        <Link className='d-block my-3 ms-0' to="/warranty-coverage">Warranty Coverage</Link>
-                        <Link className='d-block my-3 ms-0' to="/return-refund">Returns & Refunds</Link>
-                        <Link className='d-block my-3 ms-0' to="/account/login">Account</Link>
-                    </div>
-                </div>
-                <div className="offcanvas-footer">
-                    <hr className='m-1 w-100' />
-                    <div className="social-media py-2">
-                        <Link to=""><i className="bi bi-facebook fs-6"></i></Link>
-                        <Link to="https://www.instagram.com/defendoofficial/reels/"><i className="bi bi-instagram fs-6"></i></Link>
-                        <Link to=""><i className="bi bi-tiktok fs-6"></i></Link>
-                    </div>
-                </div>
-
-
-            </div>
         </div>
     )
 }
