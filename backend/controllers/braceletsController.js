@@ -72,11 +72,11 @@ export const getBraceletDetailsById = async (req, res, next) => {
 };
 
 export const addBraceletDetails = async (req, res, next) => {
-
+  
   const braceletDetails = req.body;
 
   try {
-    await Bracelets.create(ringDetails)
+    await Bracelets.create(braceletDetails)
     res.json({ message: "Product has been uploaded", braceletDetails })
   }
   catch (error) {

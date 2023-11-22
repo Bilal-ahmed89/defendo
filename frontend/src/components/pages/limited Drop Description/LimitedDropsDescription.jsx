@@ -19,8 +19,8 @@ function LimitedDropsDescription() {
     const baseUrl = 'http://localhost:7000';
     const dispatch = useDispatch();
     const [quantity, setQuantity] = useState(1);
-    const [selectedSize, setSelectedSize] = useState('16" inches');
-    const [selectedColor, setSelectedColor] = useState('Black');
+    const [selectedSize, setSelectedSize] = useState('default');
+    const [selectedColor, setSelectedColor] = useState('default');
     const [loading, setLoading] = useState(false);
     const [isZoomed, setIsZoomed] = useState(false);
 
@@ -79,13 +79,13 @@ function LimitedDropsDescription() {
                 <div className="col-md-3 left-col d-none d-md-block">
                     <div className="div">
                         { }
-                        <a href="#silver">{loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <img className=' d-block mb-4' src={baseUrl + productData?.img} alt="" />}</a>
-                        <a href="#golden">{loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <img className=' d-block mb-4' src={baseUrl + productData?.img2} alt="" />}</a>
+                        <a href="#silver">{loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <img className=' d-block mb-4' src={productData?.img[0]} alt="" />}</a>
+                        <a href="#golden">{loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <img className=' d-block mb-4' src={productData?.img[1]} alt="" />}</a>
                     </div>
                 </div>
                 <div className="col-md-4 align-items-start mid-col d-none d-md-block">
-                    {loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <Link to="" className='zoom-container'><img id='silver' className={`my-4 d-block zoom-image ${isZoomed ? 'zoomed' : ''}`} src={baseUrl + productData?.img} alt="" onClick={handleImageClick} /></Link>}
-                    {loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <Link to=""><img id='silver' className='my-4 d-block' src={baseUrl + productData?.img2} alt="" /></Link>}
+                    {loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <Link to="" className='zoom-container'><img id='silver' className={`my-4 d-block zoom-image ${isZoomed ? 'zoomed' : ''}`} src={productData?.img[0]} alt="" onClick={handleImageClick} /></Link>}
+                    {loading ? <BarLoader color="#000000" width={100} height={1} loading={loading} /> : <Link to=""><img id='silver' className='my-4 d-block' src={productData?.img[1]} alt="" /></Link>}
 
                 </div>
                 <div className="mob-col  col-md-4 d-sm-none">
@@ -162,10 +162,10 @@ function LimitedDropsDescription() {
                     </div>
                     {
                         productData?.quantity == 0 ? (
-                            <p className="p-2 buy-now text-center text-uppercase p-2 my-1      ">SOLD OUT!</p>
+                            <p className="buy-now text-center text-uppercase p-2 my-1      ">SOLD OUT!</p>
                         ) : (
-                            <><Link className='text-decor' to="" onClick={handleAddToCart}><h5 className='p-2 add-cart text-center text-uppercase p-2 my-2 btn'>add to cart</h5></Link>
-                                <Link className='text-decor' to="/checkout"> <h5 className='p-2 buy-now text-center text-uppercase p-2 my-1 btn'>buy it now</h5></Link>
+                            <><Link className='text-decor' to="" onClick={handleAddToCart}><h5 className='add-cart text-center text-uppercase p-2 my-2 btn'>add to cart</h5></Link>
+                                <Link className='text-decor' to="/checkout"> <h5 className='buy-now text-center text-uppercase p-2 my-1 btn'>buy it now</h5></Link>
 
                             </>
                         )}

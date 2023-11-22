@@ -5,7 +5,6 @@ import { selectCurrentToken, selectCurrentUser } from "./authSlice"
 const AuthorisedRoutes = () => {
     const token = useSelector(selectCurrentToken)
     const user = useSelector(selectCurrentUser)
-    console.log(token);
     
     const location = useLocation()
 

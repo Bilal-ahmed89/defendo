@@ -20,7 +20,7 @@ function ProductCard({ data: ProductData, routeName }) {
                     {ProductData?.quantity == 0 && (    
                         <span className="sold-out-badge">SOLD OUT</span> 
                     )}
-                    <img src={baseUrl + ProductData?.img} className="card-img-top" alt="" height='' />
+                    <img src={ProductData?.img[0]} className="card-img-top" alt="" height='' />
                 </Link>
                 <div className="card-body">
                     <h5 className="card-title text-center fw-bold">{ProductData?.name}</h5>

@@ -10,7 +10,7 @@ router.route('/rings').get(getRingDetails);
 
 router.route('/rings/:id').get(getRingDetailsById);
 
-router.route('/rings/new').post(upload.single('imageData'), addRingDetails);
+router.route('/rings/new').post(addRingDetails);
 
 router.route('/rings/delete/:id').delete(deleteRingDetails);
 

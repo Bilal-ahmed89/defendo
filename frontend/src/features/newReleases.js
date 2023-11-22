@@ -11,10 +11,10 @@ export const newReleasesApi = createApi({
             query: (id) => `newReleases/${id}`,
         }),
         addNewReleasesDetails: builder.mutation({
-            query: (newNewRelease) => ({
+            query: (newProduct) => ({
                 url: 'newReleases/new',
                 method: 'POST',
-                body: newNewRelease,
+                body: newProduct,
             }),
         }),
         deleteNewReleasesDetails: builder.mutation({

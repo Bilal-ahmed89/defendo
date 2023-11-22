@@ -11,10 +11,10 @@ export const baraceletsApi = createApi({
             query: (id) => `bracelets/${id}`,
         }),
         addBaraceletDetails: builder.mutation({
-            query: (newBaracelet) => ({
+            query: (newProduct) => ({
                 url: 'bracelets/new',
                 method: 'POST',
-                body: newBaracelet,
+                body: newProduct,
             }),
         }),
         deleteBaraceletDetails: builder.mutation({

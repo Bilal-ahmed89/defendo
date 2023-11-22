@@ -5,24 +5,32 @@ const { Schema } = mongoose
 const pendantsSchema = new Schema({
     name : {
         type: String,
-        required : true
+        
     },
     price : {
         type : String,
-        required : true
+        
     },
-    img : {
-        type : String,
-        required : true
-    },
-    img2 : {
-        type : String,
-        required : true
+    img: {
+        type: [String],
+        
     },
     quantity : {
         type : String
     },
-    variants : {
+    variants: [
+        {
+            size: {
+                type: String,
+                
+            },
+            stock: {
+                type: String,
+                
+            },
+        },
+    ],
+    productId : {
         type : String
     }
 

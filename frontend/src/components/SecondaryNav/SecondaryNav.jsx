@@ -62,10 +62,10 @@ function SecondaryNav() {
                         <ul className='p-1'>
                           <h5 className='text-uppercase fs-6 fw-bold p-1 mb-3 fs-5'>outwear</h5>
 
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Shirts</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">T-shirts</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Hoodies</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to="/coming-soon">Track suits</Link> <span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
                         </ul>
                       </div>
                       <div className="col-md-4 mid-col">
@@ -83,9 +83,9 @@ function SecondaryNav() {
                         <ul className='p-1'>
                           <h5 className='text-uppercase fs-6 fw-bold p-1 mb-3 fs-5'> pants</h5>
 
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Trousers</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4 '>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Shorts  </Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4'>Coming Soon</span></li>
-                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>sweatpants</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 ms-2 rounded-1 ms-4'>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Trousers</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Shorts  </Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4'>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>sweatpants</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4'>Coming Soon</span></li>
                         </ul>
 
                       </div>
@@ -152,9 +152,9 @@ function SecondaryNav() {
                 {searchResults.length >= 1 && (
                   <div className='py-3 row m-0' >
                     {searchResults.map((item, idx) => (
-                      <Link to={item.productId} className='p-0'><div key={idx} className='d-flex mb-3 border border-dark p-0'>
+                      <Link to={`/${item.productId}/${item._id}`} className='p-0'><div key={idx} className='d-flex mb-3 border border-dark p-0'>
                         <div className='col-3'>
-                          <img src={`http://localhost:7000/` + item.img} alt="" width='80' height='80' />
+                          <img src={item.img[0]} alt="" width='80' height='80' />
                         </div>
                         <div className="col-9">
                           <h6 className='text-center pt-2'>{item.name}</h6>

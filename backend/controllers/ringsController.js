@@ -34,7 +34,6 @@ export const getRingDetailsById = async (req, res, next) => {
 
   export const addRingDetails = async (req, res, next) => {
 
-    console.log(req.body);
     const ringDetails = req.body;
 
     try {
@@ -42,6 +41,7 @@ export const getRingDetailsById = async (req, res, next) => {
         res.json({ message: "Product has been uploaded",  ringDetails })
     }
      catch (error) {
+      console.error('Error adding ring details to the database:', error);
         next(error)
     }
 

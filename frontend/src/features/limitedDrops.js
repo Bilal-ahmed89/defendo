@@ -11,10 +11,10 @@ export const limitedDropsApi = createApi({
             query: (id) => `limitedDrops/${id}`,
         }),
         addLimitedDrops: builder.mutation({
-            query: (newLimitedDrop) => ({
+            query: (newProduct) => ({
                 url: 'limitedDrops/new',
                 method: 'POST',
-                body: newLimitedDrop,
+                body: newProduct,
             }),
         }),
         deleteLimitedDrops: builder.mutation({

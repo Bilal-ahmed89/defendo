@@ -11,10 +11,10 @@ export const chainsApi = createApi({
             query: (id) => `chains/${id}`,
         }),
         addChainDetails: builder.mutation({
-            query: (newChain) => ({
+            query: (newProduct) => ({
                 url: 'chains/new',
                 method: 'POST',
-                body: newChain,
+                body: newProduct,
             }),
         }),
         deleteChainDetails: builder.mutation({

@@ -27,7 +27,7 @@ import AdminPanel from './AdminPanel/AdminPanel';
 import LimitedDropsDescription from './components/pages/limited Drop Description/LimitedDropsDescription'
 import NewReleasesDescription from './components/pages/NewReleases Description/NewReleasesDescription';
 import PendantDescription from './components/pages/pendants/PendantDescription';
-import RingsProduct from './AdminPanel/RingsProduct';
+
 import Orders from './AdminPanel/Orders';
 import PrivateRoutes from './features/PrivateRoutes';
 import CheckoutCart from './components/CheckoutCart/CheckoutCart'
@@ -48,6 +48,12 @@ import StickyNav from './components/StickyNav';
 import NewReleaseGrid from './components/newReleaseGrid/NewReleaseGrid';
 import LimitedDropGrid from './components/limitedDropsGrid/LimitedDropsGrid';
 import LimitedDropGridSortingBar from './components/limitedDropGridSortingBar/LimitedDropGridSortingBar';
+import RingCategory from './AdminPanel/components/RingCategory';
+import BraceletCategory from './AdminPanel/components/BraceletCategory';
+import ChainCategory from './AdminPanel/components/ChainCategory';
+import PendantCategory from './AdminPanel/components/PendantCategory';
+import NewReleasesCategory from './AdminPanel/components/NewReleaseCategory';
+import LimitedDropsCategory from './AdminPanel/components/LimitedDropsCategory';
 
 
 
@@ -98,6 +104,14 @@ function App() {
         <Route path='/Admin-panel' element={<AdminPanel />} />
         <Route path='/admin-panel/orders' element={<Orders />} />
         <Route path='/admin-panel/users' element={<Users />} />
+
+        <Route path='/admin-panel/category/ring' element={<RingCategory/>} />
+        <Route path='/admin-panel/category/bracelet' element={<BraceletCategory/>} />
+        <Route path='/admin-panel/category/chain' element={<ChainCategory/>} />
+        <Route path='/admin-panel/category/pendant' element={<PendantCategory/>} />
+        <Route path='/admin-panel/category/limitedDrop' element={<LimitedDropsCategory/>} />
+        <Route path='/admin-panel/category/newRelease' element={<NewReleasesCategory/>} />
+
         </Route>
 
         <Route path='/faq' element={<FAQs />} />
@@ -115,10 +129,9 @@ function App() {
         <Route path='/warranty-coverage' element={<WarrantyCoverage />} />
         <Route path='/return-refund' element={<ReturnRefund />} />
         <Route path='/limited-drops' element={<LimitedDrops />} />
-        <Route path='/ring-product' element={<RingsProduct />} />
+
 
         
-
         <Route path='/checkout-cart' element={<CheckoutCart />} />
 
 
