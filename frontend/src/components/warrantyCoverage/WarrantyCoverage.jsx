@@ -27,7 +27,7 @@ function WarrantyCoverage() {
                     <p>{warrantyDetails[0]?.description}</p>
 
                         <div className="read-more">
-                            <Link to="/warranty-coverage" className='text-center text-white text-decor'>{warrantyDetails[0]?.link}</Link>
+                            <Link to="/warranty-coverage" className='text-center text-white text-decor'>Read More</Link>
                         </div>
                 </div>
             </div>

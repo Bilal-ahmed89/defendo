@@ -47,6 +47,7 @@ export const loginUser = async(req, res, next)=>{
         }
     
         const loginToken = jwt.sign({user : user}, 'OuJ_jm9MQB2oLSX3KBpCEszkh3TtbFGS57xFaAQhUGo')
+
     
         res.cookie('loginToken', loginToken, { expires : new Date(Date.now() + 60000000), httpOnly: true, secure : false }).json({
             user: user,

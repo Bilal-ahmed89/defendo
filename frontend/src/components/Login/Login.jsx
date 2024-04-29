@@ -38,7 +38,6 @@ function Login() {
             const result = await loginUser(user);
             resetForm();
             const userData = result.data
-            console.log(userData);
             dispatch(setCredentials(userData))
 
             if (result.data.status === "success") {

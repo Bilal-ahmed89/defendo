@@ -8,7 +8,9 @@ import { logOut, selectCurrentToken } from '../../features/authSlice';
 
 function NavBar() {
     const cartItems = useSelector((state) => state.cart);
-    const token = useSelector(selectCurrentToken)
+    const token = localStorage.getItem("loginToken");
+    
+    // const token = useSelector(selectCurrentToken)
     const location = useLocation();
     const dispatch = useDispatch()
 
