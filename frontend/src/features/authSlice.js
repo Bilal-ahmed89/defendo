@@ -1,10 +1,9 @@
-// authSlice.js
-
 import { createSlice } from '@reduxjs/toolkit';
+import Cookies from 'js-cookie';
 
 const initialState = {
     user: null,
-    token: localStorage.getItem("loginToken") || null 
+    token: Cookies.get("loginToken") || null, 
 };
 
 const authSlice = createSlice({
@@ -15,12 +14,15 @@ const authSlice = createSlice({
             const { user, loginToken } = action.payload;
             state.token = loginToken;
             state.user = user;
-            localStorage.setItem("loginToken", loginToken); // Save token to localStorage
+            Cookies.set("loginToken", loginToken, { expires: 7 })
+            Cookies.set("userRole", user.role, { expires: 7 })
         },
         logOut: (state) => {
+            const token = localStorage.getItem("loginToken")
             state.user = null;
             state.token = null;
-            localStorage.removeItem("loginToken"); // Remove token from localStorage
+            Cookies.remove("loginToken")
+            Cookies.remove("userRole") 
         }
     }
 });

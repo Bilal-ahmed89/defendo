@@ -3,10 +3,8 @@ import { useSelector } from "react-redux"
 import { selectCurrentToken, selectCurrentUser } from "./authSlice"
 
 const AuthorisedRoutes = () => {
-    // const token = useSelector(selectCurrentToken)
+    const role = localStorage.getItem("userRole");
     const token = localStorage.getItem("loginToken");
-    const user = useSelector(selectCurrentUser)
-    console.log(user);
     
     const location = useLocation()
 
@@ -15,7 +13,7 @@ const AuthorisedRoutes = () => {
     }
 
     
-    if (user && user.role === 'admin') {
+    if (role === 'admin') {
         return <Outlet />;
     } else {
         return <Navigate to="/" replace />;

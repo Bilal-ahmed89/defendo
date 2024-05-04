@@ -4,13 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom'
 import Cart from '../cart/Cart';
 import { logOut, selectCurrentToken } from '../../features/authSlice';
+import Cookies from 'js-cookie';
 
 
 function NavBar() {
     const cartItems = useSelector((state) => state.cart);
-    const token = localStorage.getItem("loginToken");
-    
-    // const token = useSelector(selectCurrentToken)
+    // const token = localStorage.getItem("loginToken");
+    const token = Cookies.get("loginToken")
     const location = useLocation();
     const dispatch = useDispatch()
 
@@ -60,7 +60,7 @@ function NavBar() {
                                     <Link className='text-decor' aria-current="page" to="/" onClick={() => { dispatch(logOut()) }}>
                                         <i className="bi bi-power fs-3 fw-bold text-dark"></i>
                                     </Link>
-                                    :
+                                    : 
                                     <Link className='text-decor' aria-current="page" to="/account/login">
                                         <i className="bi bi-person fs-3 fw-bold text-dark"></i>
                                     </Link>

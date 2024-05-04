@@ -86,6 +86,7 @@ function SecondaryNav() {
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Trousers</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4 '>Coming Soon</span></li>
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Shorts  </Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1 rounded-1 ms-4'>Coming Soon</span></li>
                           <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>sweatpants</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4'>Coming Soon</span></li>
+                          <li className='list-none m-2'><Link className='text-decor fs-6 text-dark text-uppercase' to='/coming-soon'>Jeans</Link><span style={{ fontSize: '10px', textDecoration: 'underline' }} className='text-dark p-1  rounded-1 ms-4'>Coming Soon</span></li>
                         </ul>
 
                       </div>
